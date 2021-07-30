@@ -12,7 +12,6 @@
     --color-blue-clair:#DEEBFF;
     --color-gris-start:#d9d9d9;
 }
-
 body{
     margin: 0;
     padding: 1px 0 0 0;
@@ -142,6 +141,11 @@ ul{
     padding:  0 15px;
 }
 
+::placeholder{
+    color: black;
+    font-weight: bold;
+}
+
 .txt-rech .btn-imput{
     border: none;
     background-color: var(--color-blue);
@@ -209,6 +213,7 @@ ul{
     border-radius: 0 20px 20px 0;
     height: 37px;
     line-height: 37px;
+    font-weight: bold;
 }
 
 .grp-filter a{
@@ -282,7 +287,7 @@ ul{
 }
 
 .card img{  
-    height: 100px;
+    height: 120px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -324,8 +329,8 @@ ul{
 }
 
 .card2 img{
-    width: 110px;
-    height: 120px;
+    width: 130px;
+    height: 140px;
     object-fit: cover;
     border-radius: 20px 0 0 20px ;
 }
@@ -386,13 +391,13 @@ ul{
 }
 
 .activite-card__short{
-    height: 180px;
+    height: 240px;
     margin-bottom: 20px;
 }
 
 .activite-card__short img{
     width: 100%;
-    height: 140px;
+    height: 200px;
     border-radius:20px 20px 0 0;
     object-fit: cover;
 }
@@ -402,13 +407,13 @@ ul{
 
 .activite-card__long img{
     width: 100%;
-    height: 340px;
+    height: 460px;
     border-radius:20px 20px 0 0;
     object-fit: cover;
 }
 
 .activite-card__long{
-    height: 380px;
+    height: 500px;
 }
 /******Fin activité ******/
 
@@ -605,12 +610,16 @@ ul{
         margin-bottom: 5px;
     }
 
-    .activite-card__long img{
+    .activite-card__long img,.activite-card__short img{
         height: 140px;
     }
 
     .activite-card{
         flex-direction: column;
+    }
+
+    .activite-card__short{
+        height: 180px;
     }
 
     .activite-card__long{
