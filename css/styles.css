@@ -31,6 +31,11 @@ body,button{
     border-radius: 20px; 
 }
 
+.card:hover,.card2:hover,.activite-card__short:hover,.activite-card__long:hover{
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
 .header,.filtres,#heberge,#activite{
     width: 95%;
     margin: auto;    
@@ -139,9 +144,10 @@ ul{
     border-radius: 0;
     border:0.5px solid var(--color-gris);
     padding:  0 15px;
+    width: 250px;
 }
 
-::placeholder{
+::placeholder,::-moz-placeholder,::-webkit-input-placeholder{
     color: black;
     font-weight: bold;
 }
@@ -271,8 +277,16 @@ ul{
     margin-bottom: 30px;
 }
 
+.card-list a,.card2-list a,.footer a{
+    text-decoration: none;
+    color: black;
+}
 
-/* /. */
+
+/* cardre */
+
+
+
 .card2-head,.card-head,.card-footer{
     margin: 0 10px 0 10px;
 }
@@ -285,6 +299,9 @@ ul{
     width: 40%;
     margin: 0 10px 0 10px;
 }
+
+
+
 
 .card img{  
     height: 120px;
@@ -403,6 +420,40 @@ ul{
 }
 
 
+.activite-card__short--height-long{
+    height: 280px;
+}
+
+.activite-card__short--height-long img{
+    height: 240px;
+}
+
+.activite-card__short--height-short{
+    height: 200px;
+}
+
+.activite-card__short--height-short img{
+    height: 160px;
+}
+
+
+.activite-card__short--height-long2{
+    height: 260px;
+}
+
+.activite-card__short--height-long2 img{
+    height: 220px;
+}
+
+.activite-card__short--height-short2{
+    height: 220px;
+}
+
+.activite-card__short--height-short2 img{
+    height: 180px;
+}
+
+
 
 
 .activite-card__long img{
@@ -475,7 +526,7 @@ ul{
          width: 100%; 
     }
 
-    
+   
     .card2{
         margin: 0 10px 20px 5px;
     }
@@ -483,7 +534,9 @@ ul{
     .card2-list{
         display: flex;
     }
-    
+    .card2-list img{
+        width: 110px;
+    }
 
     div.header--height-mob.header--height, div.header--height-mob.header--height a{
         height: 40px;
@@ -597,6 +650,11 @@ ul{
         margin: 0 20px 0 20px;
     }
 
+    .txt-rech .btn-imput{
+        border-radius:10px;
+        margin-left: -5px;
+    }
+
     .btn-imput .label{
         display: none;
     }
@@ -631,4 +689,10 @@ ul{
         ma
     } */
 
+}
+
+@media all and (max-width: 767px){
+    .txt-rech .txt-imput-text{
+        width: 200px;
+    }
 }
